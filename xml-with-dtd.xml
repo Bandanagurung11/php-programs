@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE products[
+<!ELEMENT prudocts (product+)>
+<!ELEMENT product (name, price, rating, discount?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT discount (#PCDATA)>
+<!ATTLIST product id CDATA #REQUIRED>
+]>
+<products>
+<product id="1">
+<name>chairs</name>
+<price>5000</price>
+<rating>9</rating>
+<discount>15</discount>
+</product>
+<product id="2">
+<name>umbrella</name>
+<price>1000</price>
+<rating>5</rating>
+</product>
+</products>
+

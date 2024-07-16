@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE example [
+  <!ELEMENT example (item+)>
+  <!ELEMENT item (name, price)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ATTLIST item id ID #REQUIRED>
+  <!ATTLIST item type (digital|physical) "physical">
+  <!ATTLIST price currency CDATA #REQUIRED>
+  <!ENTITY % currencyList "USD|EUR|GBP">
+  <!ATTLIST price currency ( %currencyList; ) #REQUIRED>
+]>
+<example>
+  <item id="123" type="digital">
+    <name>Example Product</name>
+    <price currency="USD">19.99</price>
+  </item>
+  <item id="456">
+    <name>Another Product</name>
+    <price currency="EUR">29.99</price>
+  </item>
+</example
